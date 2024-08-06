@@ -1,9 +1,5 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "hackaton/main.py", "use": "@vercel/python" }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "hackaton/main.py" }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/hackaton/main.py" }
   ]
 }
